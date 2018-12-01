@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8">
+	<script>
+		//作业一：
+    function Person(name,age){
+        this.name = name;
+        var age = age;
+        this.setAge = function(){
+            return age;
+        }
+    }
+    function Teacher(name,age,studentCount){
+        var studentCount = studentCount;
+        function setStudentCount(){
+            alert('20');
+        }
+    }
+    var person1=new Person("Tom","18");
+    console.log(person1)
+    //作业二：
+    var age = {
+    get: function(){
+        return "12";
+        },
+    set: function(){
+        this.name = "22";
+        }
+    };
+    function Per(){
+        Object.defineProperty(this,"myown",age);
+    }
+    var instance = new Per();
+    instance.myown = "test";
+    console.log(instance.myown);
+    console.log(instance.name);
+
+    
+
+	</script>
+</head>
+<body>
+
+</body>
+</html>
